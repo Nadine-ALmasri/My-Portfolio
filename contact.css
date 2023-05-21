@@ -1,0 +1,118 @@
+body {
+   
+    margin: 0;
+    padding: 0;
+    width: 100%;
+ animation: background 100ms step-end infinite ;
+
+}
+    @keyframes background{
+     0%{
+       background-color:#1a1b1a
+       
+     }
+     25%{
+       background-color:#1a1b01
+       
+     }
+     50%{
+       background-color: #1a1b1a
+       
+     }
+     100%{
+       background-color:#1a1b01
+       
+     }
+   }
+   
+   * {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+  }
+
+  :root {
+    --primary-color: #020202;
+    --secondary-color:#444;
+    --third-color: #fffbfb ;
+  }
+  #navbar {
+    background-color: var(--primary-color);
+    color: #700202;
+    padding: 0rem 3rem;
+    display: flex;
+    
+    position: fixed;
+    width: 100vw;
+  
+  }
+  #navbar ul {
+    list-style: none;
+    display: flex;
+justify-content:flex-end;
+   width: 90%;
+   float: left;
+
+  }
+  
+  #navbar ul a {
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    text-decoration: none;
+    color: #5f8f6b;
+    font-size: 1.4rem;
+  
+  } #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 300px;
+    padding-left: 400px;
+    color: #5f8f6b;
+    font-size:50px;
+  }
+  span{padding-left: 70px;}
+  .icons{
+    display: flex;
+    
+    padding-right: 450px;
+    padding-top: 100px;
+  }
+  .icon{
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 70%;
+    outline: 2px solid #fff;
+   transition-property: outline-offset , outline-color ,background-color ;
+   transition-duration:0.25s ;
+
+  }
+  .icon:hover{
+outline-offset: 4px;
+  }
+  .icons a{
+    margin: auto;
+  }
+  .icons :hover a{
+    animation: shake 0.25s;
+  } @keyframes shake{
+    10%{
+   transform:rotate(15deg) 
+      
+    }
+    20%{
+        transform:rotate(-15deg) 
+      
+    }
+    30%{
+        transform:rotate(15deg) 
+      
+    }
+    40%{
+        transform:rotate(-15deg) 
+      
+    }
+  }
